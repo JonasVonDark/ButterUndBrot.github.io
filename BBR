@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Record Label</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Record Label</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Artists</h2>
+        <button id="artists-button">See our Artists</button>
+        <div id="artists-list">
+          <ul>
+            <li>Artist 1</li>
+            <li>Artist 2</li>
+            <li>Artist 3</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Merchandise</h2>
+        <button id="merch-button">Shop our Merchandise</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright My Record Label 2023</p>
+    </footer>
+
+    <script>
+      const artistsButton = document.querySelector("#artists-button");
+      const artistsList = document.querySelector("#artists-list");
+
+      artistsButton.addEventListener("click", () => {
+        artistsList.style.display = artistsList.style.display === "block" ? "none" : "block";
+      });
+
+      const merchButton = document.querySelector("#merch-button");
+
+      merchButton.addEventListener("click", () => {
+        window.location.href = "https://your-merch-store.com";
+      });
+    </script>
+  </body>
+</html>
